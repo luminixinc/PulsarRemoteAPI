@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PulsarRemoteAPI.MainWindow"
+        Title="PulsarRemoteAPI" Width="560" Height="840">
+  <Grid Background="#e6e6e6" Margin="0,0,0,0">
+  <Border Margin="10,10,10,0" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="#e6e6e6" >
+      <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+        <TextBlock Foreground="White" Background="Black" Text="Search Accounts in Pulsar" FontSize="18" TextAlignment="Center" Margin="0,0,0,10"/>
+        <StackPanel Orientation="Horizontal" Width="500">
+          <TextBox Name="textBox_Query" Watermark="Search account names..." Margin="10" Width="390"/>
+          <Button Name="button_Search" Foreground="White" Background="Black" Content="Search" />
+        </StackPanel>
+      </StackPanel>
+      <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+      	<StackPanel>
+          <TextBlock Foreground="Black" Text="Request" FontSize="18" TextAlignment="Center" Margin="0,0,0,10"/>
+          <TextBox Name="textBox_Request" TextWrapping="Wrap" Watermark="Request will appear here" Margin="10,5,10,5" Width="480" Height="300"/>
+        </StackPanel>
+        <StackPanel>
+          <TextBlock  Foreground="Black" Text="Results" FontSize="18" TextAlignment="Center" Margin="0,0,0,10"/>
+          <TextBox Name="textBox_Result" TextWrapping="Wrap" Watermark="Results will appear here" Margin="10,5,10,5" Width="480" Height="300"/>
+        </StackPanel>
+      </StackPanel>
+    </StackPanel>
+  </Border>
+  </Grid>
+</Window>
